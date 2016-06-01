@@ -1,0 +1,131 @@
+$sizeOne: 10px;
+$sizeTwo: 15px;
+$primary: #E8E9FD;
+$secondary: #00B7E0;
+$tertiary: #99011D;
+$radius: 4px;
+$breakpoint: 715px;
+
+body {
+  background: $primary;
+}
+
+.header, .footer {
+  hr {
+    position: relative;
+    outline: none;
+    border: 0;
+    border-bottom: $sizeOne solid #000;
+    margin-bottom: $sizeTwo;
+  }
+  &.header img {
+    position: relative;
+    left: 3px;
+    @media (min-width: $breakpoint) {
+      left: 5px;
+    }
+  }
+  &.footer hr {
+    margin-bottom: $sizeTwo * 3;
+  }
+}
+
+.main {
+  position: relative;
+  z-index: 1000;
+
+  .left, .right {
+    border-radius: 150px;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    .content {
+      padding: $sizeTwo;
+
+      @media (min-width: $breakpoint) {
+        border: 1px solid #fff;
+      }
+
+      .team {
+        font-family: initial;
+        font-size: 2.5rem;
+      }
+
+      .timeline {
+        margin: 0;
+        list-style: none;
+      }
+    }
+  }
+  .left {
+    border-right: 1px solid #000;
+    @media (min-width: $breakpoint) {
+      border-color: #fff;
+    }
+
+    .content {
+      border-right: none;
+      border-left-color: #000;
+      border-top-color: #000;
+      .timeline {
+        border-left: $sizeOne solid #fff;
+
+        li {
+          padding-left: .5em;
+        }
+      }
+      .barca {
+        border-left: $sizeOne $tertiary solid;
+      }
+    }
+  }
+  .right {
+    border-left: 1px solid #000;
+    @media (min-width: $breakpoint) {
+      border-color: #fff;
+    }
+
+    .content {
+      border-left: none;
+      border-right-color: #000;
+      border-top-color: #000;
+      .timeline {
+        border-right: $sizeOne solid #fff;
+
+        li {
+          padding-right: .5em;
+        }
+      }
+
+      .argentina {
+        border-right: $sizeOne $secondary solid;
+      }
+    }
+  }
+}
+
+.footer {
+  background: $primary;
+  height: 50px;
+  text-align: center;
+  position: relative;
+
+  blockquote {
+    border-left: 0;
+    position: relative;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    max-width: 600px;
+    z-index: 1000;
+  }
+  .cta {
+    background: #fff;
+    border-bottom: 1px solid #000;
+    border-radius: 1em 1em 0 0;
+    color: #000;
+    font-family: 'helvetica';
+    font-size: 1.5em;
+    padding: $sizeTwo;
+    position: relative;
+    z-index: 1000;
+  }
+}

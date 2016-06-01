@@ -1,0 +1,145 @@
+/* line 9, ../scss/messi.scss */
+body {
+  background: #E8E9FD;
+}
+
+/* line 14, ../scss/messi.scss */
+.header hr, .footer hr {
+  position: relative;
+  outline: none;
+  border: 0;
+  border-bottom: 10px solid #000;
+  margin-bottom: 15px;
+}
+/* line 21, ../scss/messi.scss */
+.header.header img, .footer.header img {
+  position: relative;
+  left: 3px;
+}
+@media (min-width: 715px) {
+  /* line 21, ../scss/messi.scss */
+  .header.header img, .footer.header img {
+    left: 5px;
+  }
+}
+/* line 28, ../scss/messi.scss */
+.header.footer hr, .footer.footer hr {
+  margin-bottom: 45px;
+}
+
+/* line 33, ../scss/messi.scss */
+.main {
+  position: relative;
+  z-index: 1000;
+}
+/* line 37, ../scss/messi.scss */
+.main .left, .main .right {
+  border-radius: 150px;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+/* line 41, ../scss/messi.scss */
+.main .left .content, .main .right .content {
+  padding: 15px;
+}
+@media (min-width: 715px) {
+  /* line 41, ../scss/messi.scss */
+  .main .left .content, .main .right .content {
+    border: 1px solid #fff;
+  }
+}
+/* line 48, ../scss/messi.scss */
+.main .left .content .team, .main .right .content .team {
+  font-family: initial;
+  font-size: 2.5rem;
+}
+/* line 53, ../scss/messi.scss */
+.main .left .content .timeline, .main .right .content .timeline {
+  margin: 0;
+  list-style: none;
+}
+/* line 59, ../scss/messi.scss */
+.main .left {
+  border-right: 1px solid #000;
+}
+@media (min-width: 715px) {
+  /* line 59, ../scss/messi.scss */
+  .main .left {
+    border-color: #fff;
+  }
+}
+/* line 65, ../scss/messi.scss */
+.main .left .content {
+  border-right: none;
+  border-left-color: #000;
+  border-top-color: #000;
+}
+/* line 69, ../scss/messi.scss */
+.main .left .content .timeline {
+  border-left: 10px solid #fff;
+}
+/* line 72, ../scss/messi.scss */
+.main .left .content .timeline li {
+  padding-left: .5em;
+}
+/* line 76, ../scss/messi.scss */
+.main .left .content .barca {
+  border-left: 10px #99011D solid;
+}
+/* line 81, ../scss/messi.scss */
+.main .right {
+  border-left: 1px solid #000;
+}
+@media (min-width: 715px) {
+  /* line 81, ../scss/messi.scss */
+  .main .right {
+    border-color: #fff;
+  }
+}
+/* line 87, ../scss/messi.scss */
+.main .right .content {
+  border-left: none;
+  border-right-color: #000;
+  border-top-color: #000;
+}
+/* line 91, ../scss/messi.scss */
+.main .right .content .timeline {
+  border-right: 10px solid #fff;
+}
+/* line 94, ../scss/messi.scss */
+.main .right .content .timeline li {
+  padding-right: .5em;
+}
+/* line 99, ../scss/messi.scss */
+.main .right .content .argentina {
+  border-right: 10px #00B7E0 solid;
+}
+
+/* line 106, ../scss/messi.scss */
+.footer {
+  background: #E8E9FD;
+  height: 50px;
+  text-align: center;
+  position: relative;
+}
+/* line 112, ../scss/messi.scss */
+.footer blockquote {
+  border-left: 0;
+  position: relative;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 600px;
+  z-index: 1000;
+}
+/* line 120, ../scss/messi.scss */
+.footer .cta {
+  background: #fff;
+  border-bottom: 1px solid #000;
+  border-radius: 1em 1em 0 0;
+  color: #000;
+  font-family: 'helvetica';
+  font-size: 1.5em;
+  padding: 15px;
+  position: relative;
+  z-index: 1000;
+}
